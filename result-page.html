@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://kit.fontawesome.com/c51f600abd.js"></script>
+    <title>Washly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link href="css/booking.css" rel="stylesheet">
+     <link href="css/delivery.css" rel="stylesheet">
+    <link href="css/info.css" rel="stylesheet"> 
+    <link href="css/register.css" rel="stylesheet">
+	<link href="css/sign-in.css" rel="stylesheet">
+    <link href="css/summary.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body onload="removeEle()">
+        <div class="container is-search-results">
+            <div class="navigation-bar" >
+                <h1 class='navigation-title'>Washly</h1>
+
+                 <div class="filter-search"> 
+                    <!-- <div class="dropdown">
+                        <div class="select">
+                            <span>Filter</span>
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menu">
+                            <li id="male">1000m</li>
+                            <li id="female">1500m</li>
+                            <li id="female">2000m</li>
+                        </ul>
+                    </div>  -->
+                    <form id="locationForm" style="width: 100%;">
+                        <input class="resultInputText" id="location" type="text" placeholder="Your Location..."></input>
+                        <!-- <button  id="search-container-button" class="search-container-button filter-button" >Search</button> -->
+                    </form>
+                </div>
+    
+                <div class="navigation-content">
+                    <a href="#">About</a>
+                    <a href="#">FAQ</a>
+                     <a href="#">FAQ</a>
+                    <a href="#" id="loginBtn">Login</a>
+
+                    <button id="registerBtn">Sign Up</button>
+                </div>
+            </div>
+                
+            <div class="search-results-container">
+                
+                <p class="resultmainSearchContainertext" id="resultLength"></p>
+
+                <div class="cards">
+    
+                </div>
+            </div>
+
+
+            <div class="pic blurred">
+                <div><img  class="picture1" src="img/667220191440.png"></div>
+                <div><img  class="picture2" src="img/Group.png"></div>
+            </div>
+          
+            <div class="modal" id="result-modal">
+                    <span class="close-button" id="resultCloseBtn">&times;</span>
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <!-- Generated in result.js -->
+                                </div>
+                              <div class="swiper-slide">
+                                    <div class="bookingContainer slide-content">
+                                            <div>
+                                                <div class="booking-container-title">
+                                                    <p>Book a laundry service</p>
+                                                </div>
+                                            </div>
+                                  
+                                            <div class="first-booking-container">
+                                                <p>What would you like to do ?</p>
+                                                <div class="dropdowns">
+                                                    <div class="selects">
+                                                      <span>DryCleaning</span>
+                                                      <i class="fa fa-chevron-"></i>
+                                                    </div>
+                                                    <input type="hidden" name="gender">
+                                                    <ul class="dropdown-menus">
+                                                      <li id="male">Laundry only</li>
+                                                      <li id="female">Wash and Dry</li>
+                                                      <li id="mafe">Ironing only</li>
+                                                      <li id="fema" class="custom-order">Custom Order</li>
+                                                    </ul>
+                                                  </div>
+                                                <FontAwesomeIcon class="select-icon" icon="chevron-down" />
+                                            </div>
+                                  
+                                  
+                                  
+                                            <!-- First Value -->
+                                            <div class="second-booking-container">
+                                                <div>
+                                                    <div class="second-booking-container-image"><img src="./img/shirt.png" /></div>
+                                                    <p class="second-booking-container-icon" name="product" value="100" id="qnty_1">
+                                                        Shirt(s)</p>
+                                                    <select onchange='totalItem()' class="center" id="first">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <FontAwesomeIcon class="select-long-icon" icon="chevron-down" />
+                                                    <p class="second-booking-container-text" id='firstVal' name="price" max="3" min="1">&#8358;100</p>
+                                                </div>
+                                  
+                                                <div>
+                                                    <div class="second-booking-container-image"><img src="./img/trouser.png" /></div>
+                                                    <p class="second-booking-container-icon" name="product" value="100" id="qnty_2">
+                                                        Trouser(s)</p>
+                                                    <select onchange='totalItem()' class="center" id="second">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <FontAwesomeIcon class="select-long-icon" icon="chevron-down" />
+                                                    <p class="second-booking-container-text" id="secondVal" name="price" max="3" min="1">&#8358;100</p>
+                                                </div>
+                                  
+                                                <div>
+                                                    <div class="second-booking-container-image"><img src="./img/skirt.png" /></div>
+                                                    <p class="second-booking-container-icon" name="product" value="100" id="qnty_3">
+                                                        Skirt(s)</p>
+                                                    <select onchange='totalItem()' class="center" id="third">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <FontAwesomeIcon class="select-long-icon" icon="chevron-down" />
+                                                    <p class="second-booking-container-text" id="thirdVal" name="price" max="3" min="1">&#8358;100</p>
+                                                </div>
+                                  
+                                                <div>
+                                                    <div class="second-booking-container-image"><img src="./img/blouse.png" /></div>
+                                                    <p class="second-booking-container-icon" name="product" value="100" id="qnty_4">
+                                                        Blouse(s)</p>
+                                                    <select onchange='totalItem()' class="center" id="fourth">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <FontAwesomeIcon class="select-long-icon" icon="chevron-down" />
+                                                    <p class="second-booking-container-text" id="fourthVal" name="price" max="3" min="1">&#8358;100</p>
+                                                </div>
+                                  
+                                                <div>
+                                                    <div class="second-booking-container-image"><img src="./img/jacket.png" /></div>
+                                                    <p class="second-booking-container-icon-long" name="product" value="100" id="qnty_5">Suit/Jacket(s)
+                                                    </p>
+                                                    <select onchange='totalItem()' class="center" id="fifth">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <FontAwesomeIcon class="select-long-icon" icon="chevron-down" />
+                                                    <p class="second-booking-container-text" id="fifthVal" name="price" max="3" min="1">&#8358;100</p>
+                                                </div>
+                                            </div>
+                                  
+                                            <div class="third-booking-container"><p>Total:   <span>&#8358;0.00</span></p>
+                                                <div class="last-container">
+                                                        <div class="last-container-item">
+                                                        <button class="addreview  button-prev">Back</button>
+                                                            <button class="button-next booknow button">Pick a Location</button>
+                                                        </div>
+                                                        </div>
+                                               
+                                                </div>
+                                        </div>
+                                  
+                                            </div>
+                                          
+                               
+                                
+                                            <div class="swiper-slide">
+                                                    <div class="delivery-container slide-content">
+                                                            <div class="delivery-title">
+                                                            <p>Pick up and Delivery</p>
+                                                            </div>
+                                                            <div class="delivery-content">
+                                                             <div class="pick-up">
+                                                             <p class="delivery-header">Pick Up</p>
+                                                             <div class="delivery-label-select">
+                                                             <label class="delivery-header"><img class="smaller" src="./img/Calender.png"/></label>
+                                                             <input class="flatpickr flatpickr-input" type="text"  readonly="readonly">
+                                                             </div>
+                                                             <div class="delivery-label-select">
+                                                             <label class="delivery-header"><img class="smaller" src="./img/alarmclock.png"/></label>
+                                                             <input class="input-group clockpicker"/>
+                                                             </div>
+                                                             </div>
+                                                             <div class="delivery">
+                                                             <p class="delivery-header">Delivery</p>
+                                                             <label><input class="radio" type="radio"></input>  3-5days</label>
+                                                             <p class="delivery-header">Express Delivery</p>
+                                                             <label><input class="radio"  type="radio"></input>  1 day (Attracts extra 1000 )</label>
+                                                            <div class="delivery-label-select">
+                                                             <label class="delivery-header"><img class="smaller" src="./img/alarmclock.png"/></label>
+                                                             <input id="demo-input" value="00:00"/>
+                                                             </div>
+                                                             </div>
+                                                             </div>
+                                                        <div class="pickLocation">
+                                                        <label class="pickup-text"><input class="radio"  type="radio"></input > Pick up from current location</label>
+                                                        <p class="option">OR</p>
+                                                        <a href="/" class="pickup-textlink">Change pick up Location</a>
+                                                        </div>
+                                                        
+                                                        <div class="last-container">
+                                                                <div class="last-container-item">
+                                                                <button class="addreview  button-prev">Back</button>
+                                                                    <button class="button-next booknow button">See Summary</button>
+                                                                </div>
+                                                                </div>
+                                                           </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                    <div class="summaryContainer slide-content">
+                                                            <div class="summaryNavBar"><p className="summaryTitle">Summary</p></div>
+                                                            <div class="summaryContent">
+                                                            <p class="total">Total:</p>
+                                                           <p class="sum">&#8358;0.00</p>
+                                                            </div>
+                                                           
+                                                           <div class="summaryCard">
+                                                           <div class="summary-card-title">
+                                                               <div>Item</div>
+                                                              <div>Quantity</div>
+                                                           </div>
+                                                           <div class="summary-card-content">
+                                                               <div >Shirt(s)</div><div class="summary-quantity">5</div>
+                                                               </div>
+                                                           <div class="summary-card-content">
+                                                           <div>Trouser(s)</div><div class="summary-quantity">2</div>
+                                                           </div>
+                                                           <div class="summary-card-content">
+                                                           <div>Suit(s)</div><div class="summary-quantity">1</div>
+                                                           </div>
+                                                           <p class=" more">..more</p>
+                                                           </div>
+                                                           <div class="last-container">
+                                                                <div class="last-container-item">
+                                                                <button class="addreview  button-prev">Back</button>
+                                                                    <button class="button-next booknow button">Make Payment</button>
+                                                                </div>
+                                                                </div>
+                                                           
+                                                
+                                                
+                                                
+                                                            </div>
+                                            </div>        
+                              </div>
+                             
+                            </div>
+                
+            </div>
+
+            <div class="modal" id="loginForm"> 
+                <span class="close-button" id="loginCloseBtn">&times;</span>
+                <div class="modal-content">
+                    <form class="loginform form">
+                        <div>
+                            <div>
+                                <p class="second-text">Welcome back, Login</p>
+                            </div>
+                        </div>
+                                    
+                        <label class="signInLabel">Email</label>
+                        <input id="loginemail" id="work" class="signInInput" type="text" placeholder="example@email.com"/>
+            
+                        <label class="signInLabel">Password</label>
+                        <input id="loginpass" id="work" class="signInInput" type="password" placeholder="enter your password"/> 
+                            
+                            
+                        <button  type="submit" class="signInButton">Login</button>
+                        <h6 id="state"></h6>
+                        <h6 id="text"></h6>
+                        <a  href="/" class="newUser">Forgot Password?</a>
+                        <button class="signIngoogle"><span> <img class="sign-in-search-icon" src="./img/search.png"/></span>Login with Google</button>
+                        <div class="move">
+                            <p>Don't have an account? 
+                                <span class="makemeblue"  onclick="toggleToSignin()">
+                                    <a href="#">Sign up</a>
+                                </span>
+                            </p>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            
+            <div class="modal" id="registerForm">
+                <span class="close-button" id="registerCloseBtn">&times;</span>
+                <form action="" class="signupform signUp-Form">
+                    <div>
+                        <div>
+                        <h3> Sign up to request a laundry service</h3>
+                        </div>
+                    </div>
+                    <label class="formLabel">What should we call you?</label>
+                    <input id="name" class="formInput" type="text" placeholder="firstname"/>
+                    <label class="formLabel">Email Address</label>
+                    <input id="email"  class="formInput" type="text" placeholder="example@email.com"/>
+                    <label class="formLabel">Password</label>
+                    <input id="pass" class="formInput" type="password" placeholder="choose a password"/>
+                    <button class="formButton" type="submit" onclick="toggleToSignup()">Sign Up</button>
+                    <h6 id="statement"></h6>
+                    <button class="google"><span class="search-icon"><img src="./img/search.png"/></span>Sign up with Google</button>
+                    <p class="signIn-Form">Already have an account?  <a class="makemeblue" href="#"  onclick="toggleToSignup()"><span class="makemeblue" >Login</span></a></p>
+                </form>
+            </div> 
+
+            <div class="modal-three">
+                <span class="custombutton">X</span>
+            <div class="customContainer">
+                <div class="customNavBar"><p className="customTitle">Custom Order</p></div>
+              <div class="pickcustomwear">
+                  <div>
+                     <p>Item</p>
+                     <div class="dropdowns1">
+                        <div class="selects1">
+                          <span>Add Item</span>
+                          <i class="fa fa-chevron-right"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menus1">
+                          <li id="male">Laundry only</li>
+                          <li id="female">Wash and Dry</li>
+                          <li id="mafe">Ironing only</li>
+                          <li id="fema">Custom Order</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div>
+                      <p>Quantity</p>
+
+                  </div>
+              </div>
+              <div class="firstcustombutton"><button>Add More</button></div>
+              <div><button class="secondcustombutton">Back</button></div>
+                </div>
+</div>
+
+               
+                
+          
+            <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Xh2zPVQMGJZM5o82au4yP5Qk0kA8nSA&libraries=places"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+           
+            <script src="./js/autocomplete.js"></script>
+            <script src="./js/authentication.js"></script>
+            <script src="./js/carousel.js"></script>
+            <script src="./js/results.js"></script>
+        </body>
+        </html>

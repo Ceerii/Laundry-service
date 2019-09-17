@@ -1,0 +1,167 @@
+.body{
+    font-family:'Product Sans Regular';
+  }
+  
+  .form{
+    background-image: url(/laundry-washly-master/img/Login.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #fdfeff;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: left;
+    width: 380px;
+  height: 550px;
+    border:none;
+    border-radius:16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+  }
+ 
+  .second-text{
+    margin-top:10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight:bold;
+    font-family: 'Product Sans Regular';
+  }
+  .form>div>div{
+    width:160px;
+    box-shadow: 0 3px 2px -2px #B3B3B3;
+    margin:0px auto;
+    height:25px;
+    margin-top:20px;
+    margin-bottom:40px;
+   
+  }
+  .form>div>div>p{
+    
+    text-align: center;
+    width:300px;
+    margin:0 -72px;
+    font-weight:bolder;
+  }
+  .signInLabel{
+    font-size: 16px;
+  display: block;
+  margin: 0 30px;
+  padding-bottom: 3px;
+  color: rgba(0,0,0,0.7);
+  }
+  .signInInput{
+    text-indent: 10px;
+    color:black;
+    display: block;
+    width:280px;
+    height:35px;
+    margin:0 auto;
+    font-size:14px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.5)
+    }
+    .signInButton{
+      display: block;
+      width:150px;
+     height:40px;
+     margin: 45px auto 30px auto;
+     margin-top:30px;
+     border:none;
+     font-size: 16px;
+     color:white;
+     border-radius: 4px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     outline: none;
+     background:#5170FD;
+     padding-bottom: -5px;
+     
+    }
+    .signInButton:hover{
+      background:#5170FD;
+      height: 40px;
+      color:white;
+      border:1px solid #5170FD;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    .newUser{
+      display: block;
+      margin:0 107px;
+      margin-top:-10px;
+      margin-bottom:50px;
+      width:150px;
+      text-decoration: none;
+      color:rgba(0,0,0,0.8);
+      font-size:16px;
+      font-family: 'Product Sans Regular';
+    }
+    .newUser:hover{
+      text-decoration: underline;
+      text-decoration-color: #5170FD;
+       color:#5170FD;
+    }
+
+    .signIngoogle{
+      width:280px;
+      height:40px;
+      background: white;
+      margin-top:-20px;
+      margin-left:27px;
+       border-radius:4px;
+      padding-left:20px;
+     border: 1px solid rgba(0,0,0,0.5);
+    }
+    .signIngoogle:hover{
+      background:#5170FD;
+      color:white;
+      border:1px solid #5170FD;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    .newAccount{
+       padding-top:-5px;
+    }
+    .newUserAccount{
+      display:flex;
+      flex-direction:row; 
+      justify-content: space-between;
+      padding:30px;
+    }
+    .registerForm{
+      display: block;
+      position: absolute;
+      left:255px;
+      margin-left: -20px;
+      width:100px;
+     height:33px;
+     border:1px solid #384047;
+     font-size: 14px;
+     background:white;
+     color:#384047;
+     border-radius: 4px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     outline: none;
+
+    }
+    .verifyPassword1{
+      position: absolute;
+      left:285px;
+      top:230px;
+      font-size: 18px;
+      color: #C4C4C4;
+    }
+    .move>p{
+      text-align:center;
+      margin-top: 30px;
+    }
+    .move>p>span>a{
+      color:#5170FD;
+    }

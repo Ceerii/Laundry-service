@@ -1,0 +1,76 @@
+.customContainer{
+    background-image:url("/img/Group\ 2.7.png");
+    background-repeat:no-repeat;
+    background-size: 88%;
+    background-position: bottom left;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      background-color:#fcfeff;
+      width:700px;
+      height:520px;
+      margin: 70px auto;
+      border-radius: 16px;
+      font-family: 'Product Sans Regular';
+      z-index:100;
+      font-weight: normal;
+      box-shadow:  4px 7px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .customNavBar{
+      box-shadow: 0 4px 2px -2px #B3B3B3;
+      width:500px;
+     margin: 0px 95px;
+      padding-top:10px;
+      padding-bottom: 0px;
+     font-family: 'Product Sans Regular';
+     text-align:center;
+     font-size:18px;
+     font-weight:bold;
+     color: #384047;
+     height:45px;
+     margin-top:16px;
+     margin-bottom:5px;
+    
+    }
+    
+    .pickcustomwear{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin:50px 30px 20px 30px;
+    }
+    .firstcustombutton>button{
+        margin:40px 220px 20px 220px;
+        width:220px;
+        height:40px;
+        border-radius: 4px;
+        background:transparent;
+        border: 1px solid #384047;
+
+    }
+    .secondcustombutton{
+        margin:90px 195px 20px 195px;
+        width:280px;
+        height:40px;
+        border-radius: 4px;
+        background:#5170fd;
+        color:white;
+        
+    }
+    .secondcustombutton:hover{
+        background:#5170FD;
+        color:white;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+        cursor:pointer;
+    }
+    .custombutton{
+        float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+    }
+  

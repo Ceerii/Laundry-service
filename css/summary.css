@@ -1,0 +1,110 @@
+
+    .summaryNavBar{
+      box-shadow: 0 4px 2px -2px #B3B3B3;
+      width:100px;
+     margin: 0px 295px;
+      padding-top:0px;
+      padding-bottom: 0px;
+     font-family: 'Product Sans Regular';
+     text-align:center;
+     font-size:18px;
+     font-weight:bold;
+     color: #384047;
+     height:55px;
+     margin-bottom:-5px;
+    
+    }
+    .summaryNavBar>p{
+       padding-top: 28px;
+    }
+    
+    .summaryContent{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .summaryContent>.total{
+      font-size:18px;
+      font-weight: bold;
+      color: #000000;
+      margin-top:40px;
+    }
+    .summaryContent>.sum{
+      color:#384047;
+      margin-top:5px;
+    }
+    .summaryCard{
+      background: #fcfeff;
+      margin:20px auto;
+      width:300px;
+      height:200px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+      padding:20px;
+    
+    }
+    .summaryCard>div{
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+    }
+    .summary-card-title{
+      margin-bottom:20px;
+    }
+    .summary-card-content{
+      margin-bottom: 10px;
+      box-shadow: 0 2px 1px -1px #B3B3B3;
+    }
+    .more{
+      box-shadow:none;
+      color:#5170FD;
+      font-weight:bold;
+    }
+    .summary-quantity{
+        padding-right: 30px;
+    }
+    .summaryButton{
+      display:flex !important;
+      justify-content: space-between !important;
+      flex-direction: row !important;
+      margin: 40px 100px !important;
+    }
+   .button{
+      width:150px !important;
+      height:40px !important;
+      border:1px solid #5170FD!important;
+      border-radius: 4px !important;
+    }
+    .buttonLeft{
+       font-size:20px !important;
+       position: absolute !important;
+       left:450px ;
+       top:80%;
+    }
+    .buttonRight{
+      font-size:20px;
+      position:absolute;
+      left:915px;
+      top:508px;
+    }
+    .button-left{
+      border:1px solid #5170FD !important;
+      background:white !important;
+       color:#5170FD !important;
+       font-weight: bold !important;
+    }
+    .button-left:hover{
+      background:#5170FD !important;
+      color:white !important;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1) !important;
+    }
+    .button-right{
+      background:#5170FD;
+      color:white;
+      width:200px;
+      height:40px;
+      font-weight: bold;
+    }
+    .button-right:hover{
+      background:#5170FD;
+      color:white;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);}

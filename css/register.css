@@ -1,0 +1,142 @@
+/* CSS for registration page */
+
+.body{
+    font-family:'Product Sans Regular';
+    display: block;
+    text-align: center;
+   
+  }
+  .signUp-Form{
+    background-image: url(/laundry-washly-master/img/SGROPUP.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #fdfeff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: left;
+    width: 380px;
+    height: 550px;
+    border-radius:16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+  }
+  .signUp-Form>div>div{
+    width:230px;
+    box-shadow: 0 3px 2px -2px #B3B3B3;
+    margin:20px auto;
+    height:25px;
+    margin-bottom:30px;
+  }
+  .signUp-Form>div>div>h3{
+    text-align: center;
+    width:300px;
+    margin:0 -33px;
+    font-size:16px;
+    font-weight:bolder;
+   margin-bottom: 30px;
+  }
+  .formLabel{
+    font-size: 16px;
+    display: block;
+    margin: 0 30px;
+    padding-bottom: 3px;
+    color: rgba(0,0,0,0.7);
+  }
+  .formInput{
+    text-indent: 10px;
+     color:black;
+     display: block;
+     width:280px;
+     height:35px;
+     margin:0 auto;
+     font-size:14px;
+     margin-bottom: 20px;
+     padding-bottom: 0px;
+     outline:none;
+     border-radius: 4px;
+     border: 1px solid rgba(0,0,0,0.5);
+    }
+    .formButton{
+      display: block;
+      width:150px;
+     height:40px;
+     margin: 45px auto 30px auto;
+     margin-top:20px;
+     background: #384047;
+     border:none;
+     font-size: 16px;
+     color:white;
+     border-radius: 4px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     padding-top: 0px;
+     padding-bottom: -5px;
+     outline: none;
+     background:#5170FD;
+
+    
+    }
+    .formButton>a{
+      text-decoration: none;
+    }
+    .formButton:hover{
+      background:#5170FD;
+      height: 40px;
+      color:white;
+      border:1px solid #5170FD;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    .google{
+      width:280px;
+      height:40px;
+      background: white;
+      border:1px solid #384047;
+      margin:0 30px;
+      border-radius:4px;
+      padding-left:20px;
+     border: 1px solid rgba(0,0,0,0.5);
+    }
+    .signIn-Form{
+      display: block;
+      margin-top:35px;
+      width: 100%;
+      text-align: center;
+      text-decoration:none;
+      color: #384047;
+      font-size:16px;
+      margin-left: -1px;
+    }
+    .signIn-Form>span{
+      color:#5170FD;
+      font-weight:bold;
+    }
+    .makemeblue{
+        text-decoration: none;
+        color: #5170FD;
+    }
+    .makemeblue:hover{
+      text-decoration: underline;
+      color:#5170FD;
+    }
+   
+    .verifyPassword2{
+      position: absolute;
+      left:290px;
+      top:307px;
+      font-size: 18px;
+      color: #C4C4C4;
+    }
+    .google:hover{
+      
+      background:#5170FD;
+      color:white;
+      border:1px solid #5170FD;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    .search-icon{
+     margin-left:1px;
+    }

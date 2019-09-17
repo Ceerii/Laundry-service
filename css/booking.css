@@ -1,0 +1,216 @@
+
+   .booking-container-title{
+    width:200px;
+    box-shadow: 0 4px 2px -2px #B3B3B3;
+    margin:0px auto;
+    height:75px;
+    margin-bottom:30px;
+   }
+  
+   .booking-container-title>p{
+    /* box-shadow: 0 4px 2px -2px #B3B3B3;
+    margin: 0px 50px;
+    height:60px;
+     padding-top:1px;
+    padding-bottom: 0.5px;
+    font-family: 'Product Sans Regular';
+    text-align:center;
+    font-size:24px;
+    color: #384047; */
+    font-family: 'Product Sans Regular';
+    text-align: center;
+    width:205px;
+    margin:0px auto 0 auto;
+    padding-top:45px;
+    font-size:18px;
+    font-weight:bold;
+  
+   }
+   .first-booking-container{
+     margin:0 50px;
+     display:flex;
+     flex-direction: column;
+   }
+   .first-booking-container>p{
+     font-size:16px;
+   }
+   .first-booking-container>select{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background:white;
+    border-radius: 7px;
+    width: 230px;
+    height:40px;
+    border:none;
+    text-indent:15px;
+    outline:none;
+    font-size:16px;
+    margin-top: 19px;
+    margin-left:1px;
+    appearance: none;
+    
+   }
+   .select-icon{
+     position:absolute;
+     z-index:100;
+     left:580px;
+     top:230px;
+     color:rgba(0,0,0,0.4);
+     
+   }
+   .second-booking-container{
+     display:flex;
+     flex-direction: row;
+     justify-content:space-between;
+     margin: 30px 56px;
+     width: 490px;
+     font-size: 14px;
+   }
+   .second-booking-container-box{
+     display:flex;
+     flex-direction:column;
+     
+  
+   }
+   .second-booking-container-box>p{
+    margin-left:20px;
+    
+   }
+   .second-booking-container>div>select{
+     width:50px;
+     height:21px;
+     margin-left:-8px;
+     margin-bottom: 5px;
+     appearance:none;
+     outline:none;
+   }
+   .select-long-icon{
+     position: relative;
+     left:-19px;
+     color:rgba(0,0,0,0.4);
+     border-left: 1px solid rgba(0,0,0,0.4);
+     height:18px;
+     width:40px;
+     padding-top: 2px;
+     padding-left:5px;
+     margin-left:-1px;
+     text-align:center;
+     font-size:17px;
+   }
+   .second-booking-container-text{
+     margin-top:0px;
+     margin-left: 15px;
+     color:rgba(0,0,0,0.8);
+   }
+   .second-booking-container-image{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+     width:50px;
+     height:50px;
+     border-radius: 10px;
+     background-color:white ;
+     margin-left:-8px;
+     margin-bottom:-10px; 
+    /* padding: 6px;
+    padding-left:8px; */
+   }
+   .second-booking-container-image>img{
+     position:relative;
+     top:12%;
+     left:19%;
+     width:30px;
+     height:35px;
+   }
+   .second-booking-container-icon{
+     margin-top: 15px;
+     margin-left:-8px;
+     margin-bottom:5px;
+   }
+   .second-booking-container-icon-long{
+     margin-top: 15px;
+     margin-left: -25px;
+     margin-bottom: 5px;
+   }
+   .third-booking-container{
+    display: flex;
+    flex-direction: column;
+  margin-left:6px;
+  font-weight:500;
+  margin-top:-35px;
+  
+   }
+   .second-container-button-right{
+    font-size:20px;
+    position:absolute;
+    left:755px;
+    top:493px;
+    color:white;
+   }
+   div.last-container{
+     margin-top:100px;
+   }
+   .third-booking-container>p{
+     margin-top:20px;
+     margin-left:240px;
+     width:120px;
+     color:rgba(0,0,0,0.7);
+    box-shadow: 0 4px 2px -2px #B3B3B3;
+   }
+   .third-booking-container>p>span{
+    color:rgba(0,0,0,1);
+     margin-left:20px;
+   }
+   .third-booking-container>a>button{
+     margin-top:30px;
+     margin-left:-40px;
+     background:#5170FD;
+     color:white;
+     font-weight:100px;
+     width:200px;
+     height:40px;
+     border-radius:5px;
+   }
+   .third-booking{
+     display: flex;
+     justify-content:space-between;
+     margin:0;
+     margin:30px 50px;
+   }
+   .third-booking>a>button{
+    
+    font-weight:100px;
+    width:200px;
+    height:40px;
+    border-radius:4px;
+
+   }
+   .goback{
+     background: white;
+     color:#5170FD;
+     border: 1px solid #5170fd;
+   }
+   .goforward{
+    background:#5170FD;
+    color:white;
+   }
+   .third-booking>a>button:hover{
+    background:#5170FD;
+    color:white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1); 
+   }
+   .middle{
+     margin-left:50px;
+   }
+   
+   .center{
+     text-indent: 10px;
+     padding-bottom: 3px;
+   }
+   .third-booking-container>button:hover{
+    background:#5170FD;
+    color:white;
+    border:1px solid #5170FD;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+   }
+   
+  
+     
+    
