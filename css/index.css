@@ -299,16 +299,13 @@ margin-left: 10px;
     margin: 0 auto;
     padding: 95px 1.5rem 0;
 }
-.search-results-container>p{
-    z-index:5;
-    position:fixed;
-}
+
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 3rem 0 0;
+    justify-content: flex-start;
+    margin: 3rem 0 0 ;
     position: relative;
     z-index: 3;
 }
@@ -318,6 +315,7 @@ margin-left: 10px;
     width: calc(25% - 25px);
     min-height: 250px;
     margin-bottom: 2rem;
+    margin-left:1rem;
     border-radius: 8px;
     position: relative;
     background-color: white;

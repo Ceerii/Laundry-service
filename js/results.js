@@ -1,10 +1,6 @@
-$(function () {
- 
-    $("#rateYo").rateYo({
-      starWidth: "12px"
-    });
-   
-  });
+// $('.ui')
+//   .rating('disable')
+// ;
 
 (function() {
 //    if(localStorage.getItem("status")){
@@ -87,19 +83,23 @@ $(function () {
         resultLength.innerHTML = `There are ${results.length} results based on your search`;
         const cardTemplate = results.map(function(result) {
             return (
+               
                 `<div class="resultCards">
                     <div class="resultCards-image">
                         <img src="${result.photos ? result.photos[0].getUrl() : './img/L1.png'}" alt="">
                     </div>
                     <div class="resultCards-content">
                         <p>${result.name}</p>
-                        <p>${result.rating ? result.rating : 0}</p>
-                        <button href="#" class="trigger">View</button>
+                        <div class="ui rating" data-rating="${result.rating ? result.rating : 0 } "> 
+                      </div>
+                        <button href="#" class="">View</button>
                     </div>
                 </div>`
+                
             )
+           
         })
-    
+        
         resultCards.innerHTML = cardTemplate.join('');
 
         // Add event listeners on all card buttons to trigger modal 
@@ -165,3 +165,19 @@ $(function () {
         });
     }
 })();
+
+
+function toggleNav() {
+  let navMobile = document.querySelector(".navigation-content");
+  if (navMobile.style.display === "block") {
+   navMobile.style.display = "none";
+  } else {
+    navMobile.style.display = "block";
+ }
+    
+}
+
+const hamburger = () => {
+    document.querySelector(".fa-bars").addEventListener("click", toggleNav)
+}
+hamburger();
